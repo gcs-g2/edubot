@@ -26,7 +26,7 @@ public class connectToDB {
             try {
                 Class.forName(className);
                 connection = DriverManager.getConnection(connectionString, getProperties());
-            } catch (ClassNotFoundException | SQLException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
