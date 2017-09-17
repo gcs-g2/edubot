@@ -19,7 +19,7 @@ public class URLConnectionHttp {
     // HTTP GET request
     private void sendingGetRequest() throws Exception {
 
-        String urlString = "";
+        String urlString = "http://localhost:8080/";
 
         URL url = new URL(urlString);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
